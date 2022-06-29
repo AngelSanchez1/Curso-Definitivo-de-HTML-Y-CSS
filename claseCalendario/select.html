@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
+        <h1>Mala practica con select</h1>
+      <select name="Cursos" id="">
+        <option value="">JavaScript</option>
+        <option value="">HTML5</option>
+        <option value="">CSS3</option>
+        <option value="">Web Standards</option>
+        <option value="">Curso Definitivo de HTML y CSS</option>
+      </select>
 
-        <input list="cursos" />
+      <h1>Buenas practica con select</h1>
+      <input list="cursos" />
         <datalist id="cursos">
-            <option value="JavaScript"></option>
-            <option value="HTML5"></option>
-            <option value="CSS3"></option>
-            <option value="Web Standards"></option>
+          <option value="JavaScript"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="Web Standards"></option>
+          <option value="Curso Definitivo de HTML y CSS"></option>
         </datalist>
     </main>
-</body>
+  </body>
 </html>
