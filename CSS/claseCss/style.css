@@ -1,0 +1,17 @@
+/*Estilo por elemento*/
+p {
+    color: blue;
+    font-size: 40px
+}
+
+/*Estilo por clase, este se inicia con  . */
+.parrafo {
+    color: red
+}
+
+/*Estilo por id, este inicia con # */
+#texto {
+    color: rgb(18, 3, 46);
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
