@@ -1,0 +1,44 @@
+.Padre{
+    background-color: #ebf7f7 ;
+}
+.logo-image{
+    width: 146px;
+    height: 146px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #073b3b
+}
+
+.main-nav__item {
+    display: inline-block
+}
+
+.main-nav__item a {
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none
+}
+
+.main-nav__item a:hover {
+    color: rgb(179, 17, 179)
+}
+
+/*Pseudo clases define el estado especial de un elemento*/
+.main-nav__item a:active {
+    color: rgb(121, 9, 9)
+}
+
+/*Pseudo elementos definen una parte especifica*/
+.main-nav__item a::before{
+    content: " || ";
+}
+.main-nav__item a::after {
+    content: " || "
+}
