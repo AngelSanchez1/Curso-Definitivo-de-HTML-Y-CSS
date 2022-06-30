@@ -1,0 +1,13 @@
+div p {
+    color: red
+}
+
+/*Combinador al objeto mas cercano */
+h1 + p{
+    color: aqua;
+}
+
+/*Combinador */
+h2 ~ p{
+    color: rgb(50, 182, 57);
+}
