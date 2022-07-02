@@ -1,3 +1,4 @@
+/*El operador descendiente hereda todos los estilos a los elementos dentro la etiqueta div*/
 div p {
     color: red
 }
@@ -7,7 +8,12 @@ h1 + p{
     color: aqua;
 }
 
-/*Combinador */
+/*Combinador de hermano adyacente*/
 h2 ~ p{
     color: rgb(50, 182, 57);
+}
+
+/*Combinador  solo hereda a quioen sea su hijo directo solo a los que realmente son sus hijos*/
+div > p {
+    color: rgb(255, 0, 179);
 }
