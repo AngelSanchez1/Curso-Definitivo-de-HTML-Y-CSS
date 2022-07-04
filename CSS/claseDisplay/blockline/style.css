@@ -1,0 +1,43 @@
+/* En un elemento con display:inline no puedo usar margin ni padding arriba ni abajo,
+ solo derecha e izquierda. Tampoco se puede aplicar width o height.
+
+En un elemento con display:block el contenido del elemento toma el 100% del width,
+ se puede usar margin y padding por todos los lados.
+
+En un elemento con display:inline-block, se puede usar margin y padding por todos lados,
+ así como darle width y height, y el contenido es del mismo tamaño que el elemento.
+
+Etiquetas como p y div vienen por Default con un display:block
+Etiquetas como span viene por Default con un display:inline */
+
+.block-element {
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .nav {
+    background-color: rgb(136, 204, 81);
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+  }
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* Los elementos inline sólo ocupan el espacio necesario para mostrar sus contenidos.
+
+Elementos inline:
+<a> <span> <img> <b> <i> <small> <cite> <code> <em> <strong> <br> <button>
+ <input> <label> <select> <textarea>
+Mientras los elementos block ocupa todo el espacio disponible hasta el final de su línea,
+ aunque sus contenidos no ocupen todo el sitio.
+
+Elementos block:
+<div> <article> <section> <header> <footer> <aside> <table> <p> <video> <ul>
+ <ol> <h1> <h2> <h3> <h4> <h5> <h6>
+Los elementos inline-block conservan las propiedades mas importantes de los elementos inline y block. */
