@@ -1,0 +1,45 @@
+/* La pseudoclase :root hace referencia al elemento raíz del documento,
+ o lo que es lo mismo, al elemento <html>. La diferencia de utilizar html o
+  :root como selector es que este último tiene algo más de especificidad CSS. 
+  Mientras que html tiene 001, :root tendría 010.
+
+Al colocarla en :root estamos definiendo que la custom property 
+estará definida para el ámbito de esa etiqueta <html> (o cualquier elemento hijo), 
+es decir, a todo el documento. */
+
+:root {
+    --primary-color: rgb(41, 11, 175);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.8rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: rgb(179, 11, 114);
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: brown;
+}
